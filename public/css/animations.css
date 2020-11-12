@@ -1,0 +1,55 @@
+/*Create class up to animation*/
+@keyframes up {
+  /*Begin*/
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+    color: rgb(100, 100, 100);
+  }
+
+  /*End*/
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    color: white;
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appaer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards; /*Stop when up keyframe comes in 'to'*/
+}
+
+.animate-right {
+  animation-name: right;
+  animation-duration: 0.3s;
+}
+
+.animate-appaer {
+  animation-name: appaer;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+/*
+1:55:38s
+*/
